@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Deep Space Brasil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="cabecalho container">
+        <div class="navMobile" id="navMobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <span class="navMobile-idle" id="navMobile-idle"></span>
+
+        <nav class="cabecalho__navegacao invisivel" id="navMenu">
+            <ul class="navegacao__lista invisivel2" id="navLink">
+                <li class="navegacao__lista__link"><a href="#">Home</a></li>
+                <hr class="navegacao__lista__link-divisoria">
+                <li class="navegacao__lista__link"><a href="#noticias">Notícias</a></li>
+                <hr class="navegacao__lista__link-divisoria">
+                <li class="navegacao__lista__link"><a href="#agenda">Agenda</a></li>
+                <hr class="navegacao__lista__link-divisoria">
+                <li class="navegacao__lista__link"><a href="#">Curiosidades</a></li>
+                <hr class="navegacao__lista__link-divisoria">
+                <li class="navegacao__lista__link"><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <div class="cabecalho__logo"></div>
+
+        <div class="cabecalho__banner"></div>
+    </header>
+
+    <main>
+        <section class="noticias container" id="noticias">
+            <a href="#">
+                <h2 class="noticias__titulo">Últimas Notícias</h2>
+                <p class="noticias__texto">Acompanhe aqui as principais notícias do mundo da Astronomia!</p>
+            </a>
+
+            <article class="noticia">
+                <img class="noticia__img" src="./assets/img/banner.jpg" alt=""/>
+                <h3 class="noticia__titulo">Título da noticia número 01</h3>
+                <p class="noticia__texto">Chamada da noticia número 01</p>
+                <a class="noticia__link" href="#">Leia mais</a>    
+            </article>
+
+            <article class="noticia">
+                <img class="noticia__img" src="./assets/img/banner.jpg" alt=""/>
+                <h3 class="noticia__titulo">Título da noticia número 02</h3>
+                <p class="noticia__texto">Chamada da noticia número 02</p>
+                <a class="noticia__link" href="#">Leia mais</a>    
+            </article>
+
+            <article class="noticia">
+                <img class="noticia__img" src="./assets/img/banner.jpg" alt=""/>
+                <h3 class="noticia__titulo">Título da noticia número 03</h3>
+                <p class="noticia__texto">Chamada da noticia número 03</p>
+                <a class="noticia__link" href="#">Leia mais</a>    
+            </article>
+
+            <article class="noticia">
+                <img class="noticia__img" src="./assets/img/banner.jpg" alt=""/>
+                <h3 class="noticia__titulo">Título da noticia número 04</h3>
+                <p class="noticia__texto">Chamada da noticia número 04</p>
+                <a class="noticia__link" href="#">Leia mais</a>    
+            </article>
+
+            <div class="noticia__linkNoticia">
+                <a href="#">Leia todas as notícias</a>
+            </div>
+        </section>
+
+        <hr class="secao-divisoria">
+
+        <section class="agendas container" id="agenda">
+            <a href="#">
+                <h2 class="agendas__titulo">Agenda dos próximos eventos</h2>
+                <p class="agendas__texto">Acompanhe a agenda e fique por dentro dos próximos eventos!</p>
+            </a>
+
+            <article class="agenda">
+                <h3 class="agenda__titulo">02/05/2022</h3>
+                <img class="agenda__img" src="./assets/img/logo1.jpg" alt=""/>
+                <p class="agenda__texto">Lançamento de foguete</p>
+                <a class="agenda__link" href="#">Saiba mais</a>    
+            </article>
+
+            <article class="agenda">
+                <h3 class="agenda__titulo">31/12/2022</h3>
+                <img class="agenda__img" src="./assets/img/logo1.jpg" alt=""/>
+                <p class="agenda__texto">Lançamento de satélite</p>
+                <a class="agenda__link" href="#">Saiba mais</a>    
+            </article>
+
+            <article class="agenda">
+                <h3 class="agenda__titulo">07/02/2023</h3>
+                <img class="agenda__img" src="./assets/img/logo1.jpg" alt=""/>
+                <p class="agenda__texto">Lançamento de foguete</p>
+                <a class="agenda__link" href="#">Saiba mais</a>    
+            </article>
+
+            <article class="agenda">
+                <h3 class="agenda__titulo">25/08/2023</h3>
+                <img class="agenda__img" src="./assets/img/logo1.jpg" alt=""/>
+                <p class="agenda__texto">Lançamento de satélite</p>
+                <a class="agenda__link" href="#">Saiba mais</a>    
+            </article>
+
+            <div class="agenda__linkAgenda">
+                <a href="#">Veja a agenda completa</a>
+            </div>
+        </section>
+
+        <hr class="secao-divisoria">
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
