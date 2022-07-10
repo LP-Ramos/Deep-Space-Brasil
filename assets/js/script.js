@@ -17,5 +17,6 @@ navMobile.addEventListener('click', () => {
 document.addEventListener('scroll', () => {
     if(navMobile.classList.contains('active')){
         toggleMenu();
+        console.log('sa')
     }
 });

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
 </head>
 <body>
     <header class="cabecalho container">
@@ -34,9 +35,9 @@
                 <hr class="navegacao__lista__link-divisoria">
                 <li class="navegacao__lista__link"><a href="#agenda">Agenda</a></li>
                 <hr class="navegacao__lista__link-divisoria">
-                <li class="navegacao__lista__link"><a href="#">Curiosidades</a></li>
+                <li class="navegacao__lista__link"><a href="#galeria">Galeria</a></li>
                 <hr class="navegacao__lista__link-divisoria">
-                <li class="navegacao__lista__link"><a href="#">Sobre</a></li>
+                <li class="navegacao__lista__link"><a href="#sobre">Sobre</a></li>
             </ul>
         </nav>
 
@@ -47,38 +48,56 @@
 
     <main>
         <section class="noticias container" id="noticias">
-            <a href="#">
+            <a class="noticias__a" href="#">
                 <h2 class="noticias__titulo">Últimas Notícias</h2>
                 <p class="noticias__texto">Acompanhe aqui as principais notícias do mundo da Astronomia!</p>
             </a>
 
-            <article class="noticia">
-                <img class="noticia__img" src="./assets/img/banner.jpg" alt=""/>
-                <h3 class="noticia__titulo">Título da noticia número 01</h3>
-                <p class="noticia__texto">Chamada da noticia número 01</p>
-                <a class="noticia__link" href="#">Leia mais</a>    
-            </article>
+            <div class="noticias__div">
+                <article class="noticia">
+                    <a href="#">
+                        <div class="noticia__img">
+                            <img class="noticia__img-file" src="./assets/img/banner.jpg" alt=""/>
+                        </div>
+                        <h3 class="noticia__titulo">Título da noticia número 01</h3>
+                        <p class="noticia__texto">Chamada da noticia número 01</p>
+                    </a>
+                    <a class="noticia__link" href="#">Leia mais</a>    
+                </article>
 
-            <article class="noticia">
-                <img class="noticia__img" src="./assets/img/banner.jpg" alt=""/>
-                <h3 class="noticia__titulo">Título da noticia número 02</h3>
-                <p class="noticia__texto">Chamada da noticia número 02</p>
-                <a class="noticia__link" href="#">Leia mais</a>    
-            </article>
+                <article class="noticia">
+                    <a href="#">
+                        <div class="noticia__img">
+                            <img class="noticia__img-file" src="./assets/img/banner.jpg" alt=""/>
+                        </div>
+                        <h3 class="noticia__titulo">Título da noticia número 02</h3>
+                        <p class="noticia__texto">Chamada da noticia número 02</p>
+                    </a>
+                    <a class="noticia__link" href="#">Leia mais</a>    
+                </article>
 
-            <article class="noticia">
-                <img class="noticia__img" src="./assets/img/banner.jpg" alt=""/>
-                <h3 class="noticia__titulo">Título da noticia número 03</h3>
-                <p class="noticia__texto">Chamada da noticia número 03</p>
-                <a class="noticia__link" href="#">Leia mais</a>    
-            </article>
+                <article class="noticia">
+                    <a href="#">
+                        <div class="noticia__img">
+                            <img class="noticia__img-file" src="./assets/img/banner.jpg" alt=""/>
+                        </div>
+                        <h3 class="noticia__titulo">Título da noticia número 03</h3>
+                        <p class="noticia__texto">Chamada da noticia número 03</p>
+                    </a>
+                    <a class="noticia__link" href="#">Leia mais</a>    
+                </article>
 
-            <article class="noticia">
-                <img class="noticia__img" src="./assets/img/banner.jpg" alt=""/>
-                <h3 class="noticia__titulo">Título da noticia número 04</h3>
-                <p class="noticia__texto">Chamada da noticia número 04</p>
-                <a class="noticia__link" href="#">Leia mais</a>    
-            </article>
+                <article class="noticia">
+                    <a href="#">
+                        <div class="noticia__img">
+                            <img class="noticia__img-file" src="./assets/img/banner.jpg" alt=""/>
+                        </div>
+                        <h3 class="noticia__titulo">Título da noticia número 04</h3>
+                        <p class="noticia__texto">Chamada da noticia número 04</p>
+                    </a>
+                    <a class="noticia__link" href="#">Leia mais</a>    
+                </article>
+            </div>
 
             <div class="noticia__linkNoticia">
                 <a href="#">Leia todas as notícias</a>
@@ -88,46 +107,137 @@
         <hr class="secao-divisoria">
 
         <section class="agendas container" id="agenda">
-            <a href="#">
+            <a href="#" class="agendas__a">
                 <h2 class="agendas__titulo">Agenda dos próximos eventos</h2>
                 <p class="agendas__texto">Acompanhe a agenda e fique por dentro dos próximos eventos!</p>
             </a>
 
-            <article class="agenda">
-                <h3 class="agenda__titulo">02/05/2022</h3>
-                <img class="agenda__img" src="./assets/img/logo1.jpg" alt=""/>
-                <p class="agenda__texto">Lançamento de foguete</p>
-                <a class="agenda__link" href="#">Saiba mais</a>    
-            </article>
+            <div class="agendas__div">
+                <article class="agenda">
+                    <a href="#">
+                        <h3 class="agenda__titulo">02/05/2022</h3>
+                        <div class="agenda__img">
+                            <img class="agenda__img-file" src="./assets/img/banner.jpg" alt=""/>
+                        </div>
+                        <p class="agenda__texto">Lançamento de foguete</p>
+                    </a>
+                    <a class="agenda__link" href="#">Saiba mais</a>    
+                </article>
 
-            <article class="agenda">
-                <h3 class="agenda__titulo">31/12/2022</h3>
-                <img class="agenda__img" src="./assets/img/logo1.jpg" alt=""/>
-                <p class="agenda__texto">Lançamento de satélite</p>
-                <a class="agenda__link" href="#">Saiba mais</a>    
-            </article>
+                <article class="agenda">
+                    <a href="#">
+                        <h3 class="agenda__titulo">31/12/2022</h3>
+                        <div class="agenda__img">
+                            <img class="agenda__img-file" src="./assets/img/logo01.svg" alt=""/>
+                        </div>
+                        <p class="agenda__texto">Lançamento de satélite</p>
+                    </a>
+                    <a class="agenda__link" href="#">Saiba mais</a>    
+                </article>
 
-            <article class="agenda">
-                <h3 class="agenda__titulo">07/02/2023</h3>
-                <img class="agenda__img" src="./assets/img/logo1.jpg" alt=""/>
-                <p class="agenda__texto">Lançamento de foguete</p>
-                <a class="agenda__link" href="#">Saiba mais</a>    
-            </article>
+                <article class="agenda">
+                    <a href="#">
+                        <h3 class="agenda__titulo">07/02/2023</h3>
+                        <div class="agenda__img">
+                            <img class="agenda__img-file" src="./assets/img/logo02.svg" alt=""/>
+                        </div>
+                        <p class="agenda__texto">Lançamento de foguete</p>
+                    </a>
+                    <a class="agenda__link" href="#">Saiba mais</a>    
+                </article>
 
-            <article class="agenda">
-                <h3 class="agenda__titulo">25/08/2023</h3>
-                <img class="agenda__img" src="./assets/img/logo1.jpg" alt=""/>
-                <p class="agenda__texto">Lançamento de satélite</p>
-                <a class="agenda__link" href="#">Saiba mais</a>    
-            </article>
+                <article class="agenda">
+                    <a href="#">
+                        <h3 class="agenda__titulo">25/08/2023</h3>
+                        <div class="agenda__img">
+                            <img class="agenda__img-file" src="./assets/img/banner.jpg" alt=""/>
+                        </div>
+                        <p class="agenda__texto">Lançamento de satélite</p>
+                    </a>
+                    <a class="agenda__link" href="#">Saiba mais</a>    
+                </article>
+            </div>
 
             <div class="agenda__linkAgenda">
                 <a href="#">Veja a agenda completa</a>
             </div>
         </section>
 
-        <hr class="secao-divisoria">
+        <section class="galeria container" id="galeria">
+            <a class="galeria__a" href="#">
+                <h2 class="galeria__titulo">Galeria de imagens</h2>
+                <p class="galeria__texto">Veja as fotos mais sensacionais do universo!</p>
+            </a>
+
+            <div class="galeria__div">
+                <article class="galeria-img">
+                    <a href="#">
+                        <h3 class="galeria-img__titulo">Falcon 9</h3>
+                        <div class="galeria-img__img">
+                            <img class="galeria-img__img-file" src="./assets/img/banner.jpg" alt=""/>
+                        </div>
+                    </a>    
+                </article>
+
+                <article class="galeria-img">
+                    <a href="#">
+                        <h3 class="galeria-img__titulo">Nebulosa planetária</h3>
+                        <div class="galeria-img__img">
+                            <img class="galeria-img__img-file" src="./assets/img/banner.jpg" alt=""/>
+                        </div>
+                    </a>    
+                </article>
+
+                <article class="galeria-img">
+                    <a href="#">
+                        <h3 class="galeria-img__titulo">Andrômedra</h3>
+                        <div class="galeria-img__img">
+                            <img class="galeria-img__img-file" src="./assets/img/banner.jpg" alt=""/>
+                        </div>
+                    </a>    
+                </article>
+
+                <article class="galeria-img">
+                    <a href="#">
+                        <h3 class="galeria-img__titulo">O Sistema Solar</h3>
+                        <div class="galeria-img__img">
+                            <img class="galeria-img__img-file" src="./assets/img/banner.jpg" alt=""/>
+                        </div>
+                    </a>    
+                </article>
+            </div>
+
+            <div class="galeria-img__linkGaleria">
+                <a href="#">Veja todas as fotos</a>
+            </div>
+        </section>
+
+        <section class="sobre container" id="sobre">
+            <hr class="secao-divisoria div2">
+            <a class="sobre__a" href="#">
+                <h2 class="sobre__titulo">Sobre</h2>
+                <div class="sobre__div">
+                    <div class="sobre__img"></div>
+                    <p class="sobre__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nulla esse asperiores repudiandae ab optio commodi eaque!</p>
+                </div>
+            </a>
+
+            <div class="sobre__linkSobre">
+                <a href="#">Saiba mais sobre nós</a>
+            </div>
+
+            <div class="sobre__linkContato">
+                <a href="#">Entre em contato</a>
+            </div>
+        </section>
     </main>
+
+    <footer class="rodape">
+        <div class="rodape__logo"></div>
+        <p class="rodape__texto">&copy; Todos os direitos reservados | 2022</p>
+        <p class="rodape__texto">Desenvolvido por <a class="rodape__texto_link" href="#">LP-Ramos</a>.</p>
+    </footer>
+
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
