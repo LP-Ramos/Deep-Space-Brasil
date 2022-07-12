@@ -40,6 +40,15 @@
     flex-direction: column;
 }
 
+.noticia:hover, .agenda:hover, .galeria-img:hover{
+    box-shadow: 0 0 0 3px var(--white);
+    transition: .2s all ease-in-out;
+}
+
+.noticia:active, .agenda:active, .galeria-img:active{
+    background-color: var(--color-5);
+}
+
 .agenda{
     width: 40%;
 }
@@ -96,6 +105,15 @@
     align-self: center;
     padding: 5px;
     margin: 10px 0;
+}
+
+.noticia__linkNoticia:hover, .agenda__linkAgenda:hover, .galeria-img__linkGaleria:hover, .sobre__linkSobre:hover, .sobre__linkContato:hover{
+    box-shadow: 0 0 0 3px var(--white);
+    transition: .2s all ease-in-out;
+}
+
+.noticia__linkNoticia:active, .agenda__linkAgenda:active, .galeria-img__linkGaleria:active, .sobre__linkSobre:active, .sobre__linkContato:active{
+    background-color: var(--color-5);
 }
 
 /* Divisórias */
