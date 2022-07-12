@@ -120,12 +120,7 @@
 }
 
 .cabecalho__banner{
-    display: none;
-    width: 100vw;
-    height: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('./../img/banner.jpg');
+    visibility: hidden;
 }
 
 @media screen and (min-width: 768px){
@@ -164,5 +159,47 @@
         width: 70%;
         height: 70%;
         margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__navegacao{
+        transition: .5s;
+    }
+
+    .cabecalho__logo{
+        z-index: 7;
+    }
+
+    .cabecalho__banner{
+        visibility: visible;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-image: url('./../img/banner.jpg');
+    }
+
+    .nav-scroll-opacity{
+        opacity: .8;
+    }
+
+    .nav-scroll{
+        height: 20px;
+        background-color: var(--color-1);
+    }
+
+    .navegacao__lista__link{
+        opacity: 1;
+    }
+
+    .navegacao__lista__link:hover{
+        font-weight: 700;
+    }
+
+    .navegacao__lista__link:active{
+        color: var(--color-4);
     }
 }

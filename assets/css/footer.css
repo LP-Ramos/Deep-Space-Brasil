@@ -24,3 +24,22 @@
     color: var(--white);
     font-size: .8rem;
 }
+
+@media screen and (min-width: 1024px){
+    .rodape{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .rodape__logo{
+        width: 50%;
+    }
+
+    .rodape :nth-child(2){
+        order: -1;
+    }
+
+    .rodape__texto{
+        font-size: .9rem;
+    }
+}
