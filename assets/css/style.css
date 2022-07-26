@@ -16,6 +16,7 @@
 .noticias__titulo, .agendas__titulo, .galeria__titulo, .sobre__titulo{
     font-size: 1.3rem;
     font-weight: 700;
+    line-height: 2rem;
 }
 
 .noticias__texto, .agendas__texto, .galeria__texto{
@@ -43,6 +44,11 @@
 .noticia:hover, .agenda:hover, .galeria-img:hover{
     box-shadow: 0 0 0 3px var(--white);
     transition: .2s all ease-in-out;
+}
+
+.agenda:hover .agenda__img-file{
+    transform: scale(1.1);
+    transition: .3s all ease-in-out;
 }
 
 .noticia:active, .agenda:active, .galeria-img:active{
@@ -133,16 +139,29 @@
 }
 
 /* Variações */
-.galeria, .sobre{
+.agendas, .sobre{
     background-color: var(--color-1);
 }
 
-.galeria-img{
+.agenda{
     background-color: var(--color-3);
+}
+
+.galeria-img{
+    overflow: hidden;
 }
 
 .galeria-img__img{
     margin-top: 10px;
+}
+
+.agenda__img{
+    margin: 20px 0;
+}
+
+.agenda__img-file{
+    object-fit: contain;
+    filter: invert();
 }
 
 .sobre{
@@ -185,7 +204,7 @@
     font-size: .9rem;
 }
 
-.galeria-img__linkGaleria, .sobre__linkSobre, .sobre__linkContato{
+.agenda__linkAgenda, .sobre__linkSobre, .sobre__linkContato{
     background-color: var(--color-2);
 }
 
@@ -219,6 +238,37 @@
 
     .noticia, .galeria-img{
         width: 30%;
+    }
+
+    .galeria-img__img{
+        margin: 0;
+        transition: .2s all ease-in-out;
+    }
+
+    .galeria-img:is(:hover, :focus) .galeria-img__img{
+        transform: scale(1.1);
+        filter: brightness(0.4);
+    }
+    
+    .galeria-img a{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    .galeria-img__titulo{
+        position: absolute;
+        opacity: 0;
+        z-index: 5;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2rem;
+        transition: .2s all ease-in-out;
+    }
+    
+    .galeria-img:is(:hover, :focus) .galeria-img__titulo{
+        opacity: 1;
     }
 
     .secao-divisoria{

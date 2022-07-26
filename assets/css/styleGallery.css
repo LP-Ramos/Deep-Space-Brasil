@@ -1,0 +1,5 @@
+@media screen and (min-width: 768px) {
+    .navegacao__lista a:nth-child(5){
+        border-bottom: 2px solid white;
+    }
+}

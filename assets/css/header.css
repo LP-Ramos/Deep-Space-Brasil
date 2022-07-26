@@ -160,11 +160,18 @@
         height: 70%;
         margin-top: 50px;
     }
+
+    .navegacao__lista__link-divisoria{
+        transform: rotate(90deg);
+        width: 20px;
+        opacity: .3;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .cabecalho__navegacao{
         transition: .5s;
+        padding: 2px 0;
     }
 
     .cabecalho__logo{
@@ -191,15 +198,22 @@
         background-color: var(--color-1);
     }
 
-    .navegacao__lista__link{
-        opacity: 1;
+    .navegacao__lista{
+        height: 100%;
     }
 
-    .navegacao__lista__link:hover{
-        font-weight: 700;
+    .link{
+        height: 44px;
+        align-self: center;
+        box-sizing: border-box;
+        transition: .3s all ease-in-out;
     }
 
-    .navegacao__lista__link:active{
+    .link:hover{
+        border-bottom: 3px solid white;
+    }
+
+    .link:active{
         color: var(--color-4);
     }
 }

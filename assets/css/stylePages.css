@@ -1,0 +1,47 @@
+.cabecalho{
+    height: 150px;
+}
+
+.rodape{
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho__navegacao{
+        position: absolute;
+        top: 150px;
+        height: 25px;
+    }
+
+    .noticias{
+        margin-top: 20px;
+    }
+    
+    .cabecalho__logo{
+        margin: 0;
+        cursor: pointer;
+    }
+    
+    .navegacao__lista__link{
+        font-size: 1rem;
+        margin: 0;
+    }
+    
+    .link{
+        height: 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) { 
+    .cabecalho{
+        height: 100px;
+    }
+
+    .cabecalho__navegacao{
+        top: 100px;
+    }
+
+    .link:hover{
+        border-bottom: 2px solid white;
+    }
+}
