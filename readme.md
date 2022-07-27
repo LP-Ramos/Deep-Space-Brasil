@@ -2,10 +2,10 @@
 
 O Deep Space Brasil surgiu como meu projeto pessoal para por em prática os conhecimentos de desenvolvimento web front-end adquiridos no programa Oracle Next Education.
 
-<img src="assets/img/01.png"/>
-<img src="assets/img/02.png"/>
-<img src="assets/img/03.png"/>
-<img src="assets/img/04.png"/>
+<img src="assets/img/projeto/01.png"/>
+<img src="assets/img/projeto/02.png"/>
+<img src="assets/img/projeto/03.png"/>
+<img src="assets/img/projeto/04.png"/>
   
 <h3 align="center">Desenvolvido por:
     <a href="https://www.linkedin.com/in/lp-ramos/" target="_blank">Leandro Ramos</a>
