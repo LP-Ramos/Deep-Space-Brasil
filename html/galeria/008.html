@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./../../favicon.ico" type="image/x-icon">
+    <title>Galeria | Deep Space Brasil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./../../assets/css/reset.css">
+    <link rel="stylesheet" href="./../../assets/css/global.css">
+    <link rel="stylesheet" href="./../../assets/css/header.css">
+    <link rel="stylesheet" href="./../../assets/css/style.css">
+    <link rel="stylesheet" href="./../../assets/css/footer.css">
+    <link rel="stylesheet" href="./../../assets/css/stylePages.css">
+    <link rel="stylesheet" href="./../../assets/css/styleGallery.css">
+</head>
+<body>
+    <header class="cabecalho container">
+        <div class="navMobile" id="navMobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <span class="navMobile-idle" id="navMobile-idle"></span>
+
+        <nav class="cabecalho__navegacao invisivel" id="navMenu">
+            <ul class="navegacao__lista invisivel2" id="navLink"> 
+                <a class="link" href="./../../index.html">
+                    <li class="navegacao__lista__link">Home</li>
+                </a>
+
+                <hr class="navegacao__lista__link-divisoria">
+
+                <a class="link" href="./../noticias.html">
+                    <li class="navegacao__lista__link">Notícias</li>
+                </a>
+
+                <hr class="navegacao__lista__link-divisoria">
+
+                <a class="link" href="./../galeria.html">
+                    <li class="navegacao__lista__link">Galeria</li>
+                </a>
+
+                <hr class="navegacao__lista__link-divisoria">
+
+                <a class="link" href="./../agenda.html">
+                    <li class="navegacao__lista__link">Agenda</li>
+                </a>
+
+                <hr class="navegacao__lista__link-divisoria">
+
+                <a class="link" href="./../sobre.html">
+                    <li class="navegacao__lista__link">Sobre</li>
+                </a>
+            </ul>
+        </nav>
+
+        <div class="cabecalho__logo" onclick="window.location='./../../index.html'"></div>
+
+        <div class="cabecalho__banner"></div>
+    </header>
+
+    <main>
+        <section class="gallery container" id="galeria">
+            <h2 class="gallery__title">Raios de sol na atmosfera da terra</h2>
+            <p class="gallery__subtitle">The sun's rays begin to illuminate the Earth's atmosphere</p>
+
+            <div class="gallery__img">
+                <img class="gallery__img-file" src="./../../assets/img/galeria/008 - Sun's Rays on Earth.jpg" alt=""/>
+            </div>
+
+            <a target="_blank" href="https://www.nasa.gov/image-feature/the-suns-rays-begin-to-illuminate-the-earths-atmosphere">
+                <div class="gallery__text">
+                    <p>Detalhes e download</p>
+                    <img src="./../../assets/img/icons/003.svg" alt="">
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__logo"></div>
+        <p class="rodape__texto">&copy; Todos os direitos reservados | 2022</p>
+        <p class="rodape__texto">Desenvolvido por <a class="rodape__texto_link" href="https://www.linkedin.com/in/lp-ramos/">LP-Ramos</a>.</p>
+    </footer>
+
+    <script src="./../../assets/js/mobileNav.js"></script>
+</body>
+</html>
